@@ -391,23 +391,29 @@ body{
 
     .navigations{
         position: fixed;
-        top: 70px;
-        left: 0px;
-        width: 100%;
+        top: 60px;
+        right: 0px;
+        width: 30%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        
         padding : 20px 0;
-        transform: translateY(-380px);
-        transition: .1s;
+        transform: translateX(300px);
+        transition: .2s ease-in;
 
 
     }
     .navigations li{
         margin : 10px 0;
+        
+    }
+    .navigations li a{
+        color: white;
     }
     #toggle:checked ~ .navigations{
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
