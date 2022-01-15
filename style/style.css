@@ -45,6 +45,7 @@ body{
     font-size: 20px;
     padding: 5px 15px;
     font-weight: 600;
+    transition: .1s;
 }
 
 .navigations li a:hover{
@@ -170,13 +171,155 @@ body{
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding : 0px 50px; 
+    padding : 0px 50px 50px 50px; 
     justify-content: center;
-    grid-gap: 20px 30px;
+    grid-gap: 25px 30px;
 }
 
 .card{
-    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    transition: .1s;
+}
+.card:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-heading{
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.price{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.rating{
+    font-size: 14px;
+    color: orange;
+}
+.rate{
+    font-weight: bold;
+    padding-left: 10px;
+    color: #5E6366;
+}
+
+.card-bottom p{
+    font-size: 15px;
+}
+
+/* Bottom text  */
+.see {
+    text-align: right;
+}
+.see a{
+    text-decoration: none;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #38cc77;
+
+}
+.arrow2{
+    font-size: 20px;
+    color: #38cc77;
+    padding-left: 10px;
+}
+
+/*---------------------- 
+    Recent Item Part 
+----------------------*/
+
+.recent{
+    margin-top: 150px;
+    margin-bottom: 200px;
+
+}
+.recent h1{
+    text-align: center;
+    font-size: 30px;
+}
+.recent-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+    justify-content: center;
+}
+.item{
+    height: 250px;
+    width: 250px;
+    margin : 0 auto;
+    overflow: hidden;
+    
+}
+.item img{
+    max-width: 100%;
+}
+
+.title{
+    padding: 10px 0 14px 10px;
     border-radius: 5px;
-    padding: 20px;
+    color : white;
+    transform: translate(-140px , -70px);
+    transition: .1s ease-in-out;
+}
+
+.item img:hover~.title{
+    transform: translate(0px,-70px);
+    background-image: linear-gradient(90deg , rgba(0, 0, 0, 0.6) , rgba(255, 255, 255, 0));
+}
+
+
+/* mini bug fix : title become invisible if hovered on title after image hover  */
+.item .title:hover{
+    transform: translate(0px,-70px);
+    background-image: linear-gradient(90deg , rgba(0, 0, 0, 0.6) , rgba(255, 255, 255, 0));
+}
+
+
+/*----------------
+      Footer 
+------------------*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A0826 ;
+    color: white;
+}
+.footer h1{
+    margin-bottom: 0;
+}
+.footer p{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: gray;
+}
+.footer-icon {
+    display: flex;
+}
+.footer-icon li{
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px white;
+
+}
+
+.footer-icon li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
 }
