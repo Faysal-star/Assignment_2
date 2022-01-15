@@ -22,6 +22,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    
 }
 
 .navbar h1{
@@ -46,4 +48,113 @@ body{
 
 .navigations li a:hover{
     color : #39cc77;
+}
+
+/*---------------------- 
+       Top Part 
+----------------------*/
+
+.top-part{
+    display: flex;
+    height: calc(100vh - 80px);
+    align-items: center;
+}
+
+/* Top left  */
+
+
+.top-left{
+   
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.top-left h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.color{
+    color: #38cc77;
+}
+
+.top-left p{
+    font-size: 20px;
+}
+
+/* Button styles */
+
+.btn{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 35px;
+    background-color: #38cc77;
+    
+    transition:.2s;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn:hover{
+    width: 200px;
+}
+.arrow{
+    transition: .1s;
+    
+}
+.btn:hover .arrow{
+    position: relative;
+    padding-left: 20px;
+    
+}
+
+/* Top right  */
+
+.top-right{
+    
+    background-image: url('../images/Circle_design.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+/*---------------------- 
+       Icon Part 
+----------------------*/
+
+.icon {
+    height: 70px;
+}
+.icon-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top : 2px solid ;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, white , rgba(128, 128, 128, 0.699) , white);
+    border-image-slice: 1;
+    
+    margin : 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.icon-list li{
+    list-style: none;
+    margin: 35px;
 }
